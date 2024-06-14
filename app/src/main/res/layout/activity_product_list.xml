@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductList">
+
+
+    
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tvProductTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="164dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Product list"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cat"
+                    android:text="Categories: "
+                    android:layout_below="@id/tvProductTitle"
+                    android:layout_marginStart="10dp"
+                    android:textSize="20sp"/>
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:id="@id/c1"
+                    android:layout_below="@id/tvProductTitle"
+                    android:background="@drawable/img_round"
+                    android:layout_toEndOf="@+id/cat"
+                    android:layout_marginStart="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/c1"
+                    android:text="Crop"
+                    android:id="@+id/lblc1"
+                    android:textColor="@color/white"
+                    android:layout_alignTop="@id/c1"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="36dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/c2"
+                    android:layout_below="@id/tvProductTitle"
+                    android:background="@drawable/img_round"
+                    android:layout_toEndOf="@+id/c1"
+                    android:layout_marginStart="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/c2"
+                    android:text="Animal"
+
+                    android:textColor="@color/white"
+                    android:id="@+id/lblc2"
+                    android:layout_alignTop="@+id/c2"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="30dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/c3"
+                    android:layout_below="@id/tvProductTitle"
+                    android:background="@drawable/img_round"
+                    android:layout_toEndOf="@+id/c2"
+                    android:layout_marginStart="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/c3"
+                    android:text="..."
+                    android:textColor="@color/white"
+                    android:id="@+id/lblc3"
+                    android:layout_alignTop="@+id/c3"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="20dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:id="@+id/imageProduct"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/apple"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/lblc1"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/textProductTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageProduct"
+                    android:layout_alignTop="@id/imageProduct"
+                    android:layout_marginStart="16dp"
+                    android:text="organic Apple"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                <TextView
+                    android:id="@+id/textProductQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textProductTitle"
+                    android:layout_toEndOf="@id/imageProduct"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Quantity: 23kg available"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/order"
+                    android:id="@+id/order1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/textProductTitle"
+                    android:layout_marginEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/textProductPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textProductQuantity"
+                    android:layout_toEndOf="@id/imageProduct"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="$9.99/ kg"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+                <ImageView
+                    android:id="@+id/imageProduct2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/cucumber"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/imageProduct"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/textProductTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageProduct2"
+                    android:layout_alignTop="@id/imageProduct2"
+                    android:layout_marginStart="16dp"
+                    android:text="Organic cucumber"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                <TextView
+                    android:id="@+id/textProductQuantity2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textProductTitle2"
+                    android:layout_toEndOf="@id/imageProduct2"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Quantity: 8 kg available"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/order"
+                    android:id="@+id/order2"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/textProductTitle2"
+                    android:layout_marginEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/textProductPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textProductQuantity2"
+                    android:layout_toEndOf="@id/imageProduct2"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="$8.90/ kg"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+
+                <ImageView
+                    android:id="@+id/imageProduct3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/brocoli"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/imageProduct2"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/textProductTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageProduct3"
+                    android:layout_alignTop="@id/imageProduct3"
+                    android:layout_marginStart="16dp"
+                    android:text="Organic Brocoli"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                <TextView
+                    android:id="@+id/textProductQuantity3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textProductTitle3"
+                    android:layout_toEndOf="@id/imageProduct3"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Quantity: 54 kg available"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/order"
+                    android:id="@+id/order3"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/textProductTitle3"
+                    android:layout_marginEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/textProductPrice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textProductQuantity3"
+                    android:layout_toEndOf="@id/imageProduct3"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="$1.25/ kg"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+
+
+                <ImageView
+                    android:id="@+id/imageProduct4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/tomato"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_below="@id/imageProduct3"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/textProductTitle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageProduct4"
+                    android:layout_alignTop="@id/imageProduct4"
+                    android:layout_marginStart="16dp"
+                    android:text="Tomato"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                <TextView
+                    android:id="@+id/textProductQuantity4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textProductTitle4"
+                    android:layout_toEndOf="@id/imageProduct4"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Quantity: 18kg available"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/order"
+                    android:id="@+id/order4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/textProductTitle4"
+                    android:layout_marginEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/textProductPrice4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textProductQuantity4"
+                    android:layout_toEndOf="@id/imageProduct4"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="$5.90/ kg"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+                <ImageView
+                    android:id="@+id/imageProduct5"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/potato"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/imageProduct4"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/textProductTitle5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageProduct5"
+                    android:layout_alignTop="@id/imageProduct5"
+                    android:layout_marginStart="16dp"
+                    android:text="Organic potatos"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                <TextView
+                    android:id="@+id/textProductQuantity5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textProductTitle5"
+                    android:layout_toEndOf="@id/imageProduct5"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Quantity: 27 kg available"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/order"
+                    android:id="@+id/order5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/textProductTitle5"
+                    android:layout_marginEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/textProductPrice5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textProductQuantity5"
+                    android:layout_toEndOf="@id/imageProduct5"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="$5.95/ kg"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+
+
+                <ImageView
+                    android:id="@+id/imageProduct6"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/brocoli"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/imageProduct5"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/textProductTitle6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/imageProduct6"
+                    android:layout_alignTop="@id/imageProduct6"
+                    android:layout_marginStart="16dp"
+                    android:text="Organic Spinach"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+                <TextView
+                    android:id="@+id/textProductQuantity6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textProductTitle6"
+                    android:layout_toEndOf="@id/imageProduct6"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Quantity: 50 kg available"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/order"
+                    android:id="@+id/order6"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/textProductTitle6"
+                    android:layout_marginEnd="20dp"
+                    />
+                <TextView
+                    android:id="@+id/textProductPrice6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textProductQuantity6"
+                    android:layout_toEndOf="@id/imageProduct6"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:text="$1.25/ kg"
+                    android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
